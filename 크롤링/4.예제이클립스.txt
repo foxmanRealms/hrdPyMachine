@@ -1,0 +1,30 @@
+predict.jsp 에 넣기
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+    <% 
+    String pre= request.getParameter("pre");
+    %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="http://127.0.0.1:5000/predict" method="post"
+	enctype="multipart/form-data">
+		<input type="file" name="file">
+		<input type="submit" name="submit">
+		
+	
+	</form>
+	
+	<h3>
+		<%=pre %>
+	
+	</h3>
+
+</body>
+</html>
